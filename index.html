@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <!-- Navigation -->
+      <nav class="nav nav-underline nav-tabs justify-content-center bg-white sticky-top">
+        <a class="nav-link fs-5 fw-bold px-4" href="#top">Главная</a>
+        <a class="nav-link fs-5 fw-bold px-4" href="#about">Обо мне</a>
+        <a class="nav-link fs-5 fw-bold px-4" href="#projects">Проекты</a>
+        <a class="nav-link fs-5 fw-bold px-4" href="#contacts">Контакты</a>
+      </nav>
+
+      <!-- Intro block -->
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center">
+              <h1 class="display-6">Привет!</h1>
+              <h1 class="display-6">
+                Я — <span class="fw-bolder">Тимофеев Матвей</span>
+              </h1>
+            <br />
+            <p class="fs-3">
+              Я учусь на 2 курсе в СПбГУ, на направлении «Программная инженерия»,
+              и увлекаюсь системным программированием.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="assets/my_photo.jpg"
+              class="my_photo img-fluid rounded d-block mx-auto border border-5 border-secondary"
+              width="300"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- About block -->
+      <div class="container py-4 fs-5" id="about">
+        <h1 class="border-bottom">Обо мне</h1>
+        <p>
+          Я родился и вырос в прекрасном городе Чебоксары, а после окончания
+          школы поступил в СПбГУ, на кафедру системного программирования, где я
+          и учусь на данный момент.
+        </p>
+        <p>
+          <strong>Что мне больше всего интересно?</strong> — Учиться. Мне
+          нравится узнавать новое в области системного программирования,
+          изучать, как устроены операционные системы и почему именно так,
+          а не иначе. А также сейчас я увлекаюсь разработкой под ПЛИС.
+        </p>
+        <p>
+          Свободное время же мне нравится проводить вместе с семьёй. Также я
+          люблю читать: в основном фантастику и детективы. А ещё летом я катаюсь
+          на роллерсёрфе.
+        </p>
+      </div>
+
+      <!-- Projects block -->
+      <div class="container py-4" id="projects">
+        <h1 class="border-bottom">Проекты</h1>
+        <div class="container py-3">
+          <div class="row row-cols-1 row-cols-md-2 gy-3">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Conv2d</h4>
+                  <span class="badge text-bg-secondary">Clash</span>
+                  <span class="badge text-bg-secondary">В разработке</span>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Проект по свёртке изображения на ПЛИС. Пиксели поступают на
+                    вход по 1 за такт, поэтому реализация использует конвейер.
+                  </p>
+                  <p class="card-text">
+                    <i>Отличительная особенность:</i>
+                    в качесте языка используется
+                    <a href="https://clash-lang.org/"> Clash</a>: код пишется на
+                    Haskell, а затем может быть транслирован в SystemVerilog или
+                    VHDL
+                  </p>
+                  <a
+                    href="https://github.com/meow79/Conv2d"
+                    class="btn btn-outline-primary"
+                    >Github</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">FPGA_learning</h4>
+                  <span class="badge text-bg-secondary">SystemVerilog</span>
+                  <span class="badge text-bg-secondary">cocotb</span>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Здесь собраны модули с различной функциональностью,
+                    написанные на SystemVerilog с целью изучения языка. Также к
+                    большинству модулей прилаются тесты: как на SystemVerilog,
+                    так и на Python с фреймворком
+                    <a href="https://www.cocotb.org/">cocotb</a>
+                    <br />
+                  </p>
+                  Некоторые из модулей:
+                  <ul>
+                    <li>
+                      Счётчик на ПЛИС на сдвоенном семисегментном индикаторе
+                    </li>
+                    <li>Одномерная свёртка</li>
+                    <li>
+                      Сумматор для чисел, поступающих последовательно(по 1 биту
+                      за такт)
+                    </li>
+                  </ul>
+                  <a
+                    href="https://github.com/meow79/FPGA_learning"
+                    class="btn btn-outline-primary"
+                    >Github</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Контакты -->
+      <div class="container py-4 fs-5" id="contacts">
+        <h1 class="border-bottom">Контакты</h1>
+        <p class="lead">
+          Если вас что-то заинтересовало или вы просто хотите подружиться, вы
+          можете написать мне сюда:
+        </p>
+        <ul>
+          <li>
+            Телеграм:
+            <a href="https://t.me/meoworbob">https://t.me/meoworbob</a>
+          </li>
+          <li>
+            Почта:
+            <a href="mailto:st141189@student.spbu.ru"
+              >st141189@student.spbu.ru</a
+            >
+          </li>
+        </ul>
+        <p>
+          А также вот мой профиль на github:
+          <a href="https://github.com/meow79">https://github.com/meow79</a>
+        </p>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
