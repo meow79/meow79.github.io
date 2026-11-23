@@ -8,3 +8,10 @@ img.my_photo {
     rotate: 2deg;
   }
 }
+
+.card {
+  transition: 0.5s;
+  &:hover {
+    translate: 0 -0.5rem;
+  }
+}
