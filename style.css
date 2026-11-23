@@ -4,8 +4,7 @@ html {
 
 img.my_photo {
   transition: 0.5s;
-}
-
-img.my_photo:hover {
-  rotate: 4deg;
+  &:hover {
+    rotate: 2deg;
+  }
 }
